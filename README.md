@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# 🗓️ Cook for Calendar – AI Scheduler for Busy Lives
 
-## Project info
+Welcome to **Cook for Calendar**, a smart conversational scheduling assistant designed to simplify how we book time — especially for homemakers, remote workers, and busy professionals. This project enables a seamless and beautiful user experience.
 
-**URL**: https://lovable.dev/projects/cccfc290-4a13-4faa-b43f-97c663a55cfb
+---
 
-## How can I edit this code?
+## 🔗 Live Project Link
 
-There are several ways of editing your application.
+👉 [Try Cook for Calendar](https://lovable.dev/projects/cccfc290-4a13-4faa-b43f-97c663a55cfb)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cccfc290-4a13-4faa-b43f-97c663a55cfb) and start prompting.
+## 🎨 Features Overview
 
-Changes made via Lovable will be committed automatically to this repo.
+### 💬 Conversational Chat Interface
+- Modern chat UI with **glassmorphism** effects
+- Smooth message animations & typing indicators
+- Light/Dark mode toggle
+- Mobile and tablet responsive
 
-**Use your preferred IDE**
+### 🧠 Smart Conversation Capabilities
+- Parses natural language requests like:
+  - “Schedule a call tomorrow at 4PM”
+  - “Book a 1-hr meeting next Friday”
+- Context-aware back-and-forth replies
+- "**Cook for Calendar**" mode – understands homemaker-friendly phrases like “after I cook lunch”
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 📅 Google Calendar Integration (Framework Ready)
+- Built-in framework for Google OAuth2 login
+- Detects calendar availability
+- Prevents booking conflicts
+- Easy slot confirmation UI
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🎙️ Additional Functionalities
+- Voice input (UI-ready, implement Web Speech API to activate)
+- Smart time parsing + timezone handling
+- System/browser notifications for upcoming events
+- Success toasts & booking confirmations
+- 10-min popup & 30-min email reminder logic (mock mode)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+## 🚀 Technologies Used
+
+| Stack Layer        | Technology                  |
+|--------------------|-----------------------------|
+| Frontend Framework | React + TypeScript          |
+| Styling            | Tailwind CSS + shadcn/ui    |
+| UI Toolkit         | shadcn components           |
+| Animation & Effects| Framer Motion, CSS Transitions |
+| State Management   | React Context API           |
+| Calendar Framework | Google Calendar API (mock)  |
+| AI Agent Logic     | Client-side logic (no backend) |
+
+
+---
+
+## 🛠 Local Development (Optional)
+```bash
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd cook-for-calendar
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the dev server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+> Ensure Node.js and npm are installed. You can use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) for easier version management.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🔐 Google Calendar Integration Steps
+To connect with a real calendar:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Visit [Google Cloud Console](https://console.cloud.google.com/)
+2. Create OAuth credentials
+3. Replace the placeholder credentials inside `CalendarContext.tsx`
+4. Authorize the app to access Google Calendar
 
-## What technologies are used for this project?
+Until then, the app will function using **mock calendar data**.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 👨‍💻 Developer Info
 
-## How can I deploy this project?
+**Built and Designed by:** *Itian Sarad Agarwal*  
+---
 
-Simply open [Lovable](https://lovable.dev/projects/cccfc290-4a13-4faa-b43f-97c663a55cfb) and click on Share -> Publish.
+## 📌 Future Enhancements
 
-## Can I connect a custom domain to my Lovable project?
+- Integrate real-time voice recognition (Web Speech API)
+- Expand AI intent detection with OpenAI API
+- Multi-user support with calendar syncing
+- WhatsApp/Telegram bot integration
+- Export calendar events as PDF/ICS
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*Simplify your scheduling, whether you're in the kitchen or in a meeting room.*
